@@ -1,10 +1,32 @@
 body {
   background-color: pink;
+  margin: 0;
+  padding: 0;
 }
 
-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+section, header, footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	color: rgb(32, 201, 32);
+	font-family: cursive;
+}
+
+.special {
+	font-weight: bold;
+	color: red;
+}
+
+#me {
+	  color: blue;
 }
 
 nav ul {
@@ -13,16 +35,17 @@ nav ul {
   padding: 0;
 }
 
-li {
+nav ul li {
   list-style: none;
   margin-right: 20px;
 }
 
-footer {
-  display: flex;
-  background-color: aliceblue;
+.bg-2 {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.bg-2 {
-  background-color: rgba(0, 0, 0, 0.1);
+footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4);
 }
+
