@@ -1,6 +1,7 @@
-const myName = "Tommmy"
-console.log("Hello " + myName)
+const buttonEle = document.getElementById("clickEle")
+console.log(buttonEle)
 
-const answerToTheFinalQuestion = 42
-
-console.log(answerToTheFinalQuestion + 2)
+buttonEle.addEventListener("click", function (event) {
+  console.log(event)
+  alert("Yoo this is a button click")
+})
