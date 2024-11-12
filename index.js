@@ -3,10 +3,17 @@ const buttonEle = document.getElementById("clickEle")
 
 buttonEle.addEventListener("click", function (event) {
   const passwordFromUserElement = document.getElementById("passwordEle")
-  if (passwordFromUserElement.value === "Mysafepassword") {
-    console.log("Logged in")
+  // TODO check if longer than 8 characters
+  // TODO check if contains a zero (0)
+  console.log(passwordFromUserElement.value)
+  if (passwordFromUserElement.value.length > 8) {
+    if (passwordFromUserElement.value.includes("0")) {
+      console.log("Gut")
+    } else {
+      console.log("Password long enough, but missing a 0")
+    }
   } else {
-    console.log("wrong password")
+    console.log("Schlecht, password zu kurz")
   }
 })
 
