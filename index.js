@@ -2,8 +2,12 @@
 const buttonEle = document.getElementById("clickEle")
 
 buttonEle.addEventListener("click", function (event) {
-  const answer = prompt("How old are you?")
-  console.log(answer)
+  const passwordFromUserElement = document.getElementById("passwordEle")
+  if (passwordFromUserElement.value === "Mysafepassword") {
+    console.log("Logged in")
+  } else {
+    console.log("wrong password")
+  }
 })
 
 // Second example text to binary
