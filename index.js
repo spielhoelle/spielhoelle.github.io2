@@ -33,3 +33,21 @@ inputEle.addEventListener("keyup", function (event) {
   const resultEle = document.getElementById("result")
   resultEle.innerHTML = result
 })
+
+
+
+function myFakeEncrypt(plainText) {
+  // encrypt this text
+  console.log(plainText)
+  return btoa(plainText) //encodes in base64 - this is not really encryption
+}
+
+const result = myFakeEncrypt("Pferde esssen viele gurken")
+console.log(result)
+
+
+
+
+
+
+
