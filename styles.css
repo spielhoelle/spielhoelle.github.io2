@@ -11,6 +11,11 @@ section, header, footer {
   padding-right: 10px;
 }
 
+button {
+  background-color: green;
+  border: 0 none
+}
+
 h1 {
 	font-size: 30px;
 }
